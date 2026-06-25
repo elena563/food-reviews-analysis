@@ -20,6 +20,8 @@ dataset = dataset.class_encode_column("label")
 split_dataset = dataset.train_test_split(test_size=0.1, seed=42, stratify_by_column="label")    # stratify for imbalanced dataset
 train_set = split_dataset['train']
 test_set = split_dataset['test']
+train_set.to_csv("train_data.csv", index=False)
+test_set.to_csv("test_data.csv", index=False)
 
 def tokenize_function(batch): return tokenizer(batch["text"], padding="longest", truncation=True, max_length=64)
 

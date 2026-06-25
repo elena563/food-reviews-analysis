@@ -2,4 +2,5 @@
 todo.txt
 scratch.ipynb
 *.safetensors
-data/
+data/*
+!data/test_data.csv
