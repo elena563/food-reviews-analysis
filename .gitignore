@@ -1,0 +1,5 @@
+.venv/
+todo.txt
+scratch.ipynb
+*.safetensors
+data/
