@@ -1,5 +1,6 @@
 .venv/
 todo.txt
+notes_for_report.txt
 scratch.ipynb
 *.safetensors
 data/*
