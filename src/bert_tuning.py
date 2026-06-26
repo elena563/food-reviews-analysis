@@ -15,7 +15,7 @@ model = AutoModelForSequenceClassification.from_pretrained(
 )
 
 # dataset loading and splitting
-dataset = load_dataset('csv', data_files='../data/Reviews_for_tuning.csv')['train']
+dataset = load_dataset('csv', data_files='../data/processed/Reviews_for_tuning.csv')['train']
 dataset = dataset.class_encode_column("label")
 split_dataset = dataset.train_test_split(test_size=0.1, seed=42, stratify_by_column="label")    # stratify for imbalanced dataset
 train_set = split_dataset['train']

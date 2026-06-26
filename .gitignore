@@ -3,5 +3,6 @@ todo.txt
 notes_for_report.txt
 scratch.ipynb
 *.safetensors
-data/*
-!data/test_data.csv
+data/processed/*
+data/raw/*
+!data/processed/test_data.csv
