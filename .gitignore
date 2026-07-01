@@ -1,7 +1,6 @@
 .venv/
-todo.txt
 notes_for_report.txt
-scratch.ipynb
+4.ipynb
 *.safetensors
 data/processed/*
 data/raw/*
